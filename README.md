@@ -28,22 +28,23 @@ The API will run locally at http://localhost:5000/graphql.
 Add a book:
 ```
 mutation {
-  addBook(input: {title: "Sample Book", author: "Author Name", id: "123"}) {
-    title
-    author
-    id
-  }
-}
-```
-Get all books:
-```
-query {
-  books {
+  addBook(book: {
+    id: 1,
+    title: "GraphQL With ID", 
+    genre: "Technology", 
+    author: { 
+      id: 123, 
+      name: "Jane Smith" 
+    } 
+  }) {
     id
     title
-    author
+    author {
+      id
+      name
+    }
   }
 }
-```
 
+```
 Thanks For Reading! :)
