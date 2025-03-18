@@ -1,4 +1,6 @@
 # Little Library API
+![Status: In Progress](https://img.shields.io/badge/status-in%20progress-yellow)
+
 The Little Library API is a basic GraphQL server that lets you manage books. You can add, query, and update book details through GraphQL queries and mutations. This project is built using C# and .NET Core, with GraphQL to interact with the book data.
 
 ## Features:
